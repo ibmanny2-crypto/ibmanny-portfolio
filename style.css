@@ -1,0 +1,373 @@
+css
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-green: #00FF4C;
+  --glow-green: #39FF14;
+  --navy-dark: #0A1A2F;
+  --white: #ffffff;
+  --gray-text: #B5B5B5;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  background-color: var(--navy-dark);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.hero {
+  background-color: var(--primary-green);
+  color: var(--navy-dark);
+  padding: 3rem 1rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  background-color: var(--navy-dark);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--glow-green);
+  color: var(--navy-dark);
+  box-shadow: 0 0 12px var(--glow-green);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--navy-dark);
+  color: var(--navy-dark);
+}
+.navbar {
+  background-color: var(--navy-dark);
+  padding: 1rem;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--navy-dark);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-green);
+}
+section {
+  padding: 3rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: var(--gray-text);
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skills-list li {
+  color: var(--gray-text);
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem auto 0;
+  max-width: 800px;
+  text-align: left;
+}
+
+.project h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: var(--gray-text);
+  margin-bottom: 1rem;
+}
+#testimonials {
+  padding: 3rem 1rem;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 700px;
+  color: var(--gray-text);
+  font-style: italic;
+}
+
+.testimonial h4 {
+  color: var(--white);
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+#contact {
+  padding: 3rem 1rem;
+}
+
+#contact a {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+/* Contact Section */
+#contact {
+  padding: 3rem 1rem;
+}
+
+#contact h2 {
+color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#contact p {
+  color: var(--gray-text);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+#contact a {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navy-dark);
+  color: var(--gray-text);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--primary-green);
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 3rem 1rem;
+}
+
+#testimonials h2 {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--gray-text);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+}
+
+.testimonial h4 {
+  margin-top: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn, .btn-outline {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+  display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

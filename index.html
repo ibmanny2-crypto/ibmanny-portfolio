@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBmanny.dev | Shopify Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Styles & Fonts -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="images/ibmanny.jpg" alt="IBmanny Avatar" class="avatar" />
+      <h1>IBmanny.dev</h1>
+      <p>Shopify Store Developer | Theme Customizer | Dropshipping Expert</p>
+      <div class="cta-buttons">
+        <a href="#portfolio" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+  </header>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <h1 style="color: var(--primary-green); font-size: 1.5rem;">IBmanny.dev</h1>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I specialize in designing and customizing high-converting Shopify stores. My goal is to help brands launch clean, fast, and responsive eCommerce experiences that actually sell.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" data-aos="fade-up">
+  <h2>My Skills</h2>
+  <ul class="skills-list">
+    <li>Shopify Theme Customization</li>
+    <li>Dropshipping Store Setup</li>
+    <li>Responsive Web Design</li>
+    <li>Store Revamp & Redesign</li>
+  </ul>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" data-aos="fade-up">
+  <h2>Portfolio</h2>
+
+  <div class="project">
+    <h3>Luxwear Homepage</h3>
+    <img src="images/luxwear-home.png" alt="Luxwear Homepage" class="portfolio-img" />
+    <p>Homepage design with logo, clean layout, and featured products.</p>
+  </div>
+
+  <div class="project">
+    <h3>Luxwear Collection</h3>
+    <img src="images/luxwear-collection.jpg" alt="Luxwear Collection Page" class="portfolio-img" />
+    <p>Collection page showcasing product categories in a grid layout.</p>
+  </div>
+
+  <div class="project">
+    <h3>Live Store</h3>
+    <p>Visit the full store for a complete experience.</p>
+    <a href="https://luxwear0.myshopify.com" target="_blank" class="btn">View Project</a>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" data-aos="fade-up">
+  <h2>What Clients Say</h2>
+
+  <div class="testimonial">
+    <p>"IBmanny delivered exactly what I needed — clean, fast, and professional work!"</p>
+    <h4>— Sarah, Luxwear Owner</h4>
+  </div>
+
+  <div class="testimonial">
+    <p>"He turned my store idea into reality with expert Shopify skills."</p>
+    <h4>— James, Brand Founder</h4>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:ibmanny2@gmail.com">ibmanny2@gmail.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/2348105678045" target="_blank">‪+234 810 567 8045‬</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 IBmanny.dev — Built with HTML & CSS</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
